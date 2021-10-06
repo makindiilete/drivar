@@ -1,13 +1,113 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: "neue";
+  src: url("assets/fonts/Helvetica-Neue-Bold.ttf")
+  format("truetype");
+  font-weight: bold;
+  font-style: normal;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: "neue";
+  src: url("assets/fonts/Helvetica-Neue-Medium.ttf")
+  format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "neue";
+  src: url("assets/fonts/Helvetica-Neue-Regular.ttf")
+  format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root{
+  --primary-color: #EE6F57;
+  --secondary-color: #00d9ff;
+  --black-primary:#1A1A1A;
+  --black-secondary:#2C2C2C;
+  --blue-primary:#080760;
+  --blue-secondary:#98AEF6;
+  --blue-light: #BECFF580;
+  --white-primary:#FFFFFF;
+  --white-medium:#FCFCFC;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  /*equivalent to 10px*/
+  font-size: 62.5% !important;
+}
+
+body {
+  font-family: "neue" !important;
+  background-color: var(--white-medium) !important;
+}
+.row {
+   margin-right: 0 !important;
+   margin-left: 0!important;
+}
+
+/*Typography*/
+h1,
+h2,
+h3 {
+  /*ds place 1rem space btw our heading and their text so it can look closer to what we have on the mockup*/
+  line-height: 1.1 !important;
+  margin-bottom: 1rem !important;
+}
+
+h1 {
+  /*with html font-size set to 62.5% this is 70px*/
+  font-size: 3rem !important;
+}
+
+h2 {
+  font-size: 2rem !important;
+}
+
+h3 {
+  font-size: 1.2rem !important;
+}
+
+p {
+  /*in other to avoid margin collapsing bcos paragraph element comes with their own margins so we set this to 0 so only the margin bottom of our headings will take prominent*/
+  margin-top: 0 !important;
+}
+
+/*Desktop*/
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 1.8rem !important;
+  }
+
+  h1 {
+    font-size: 6rem !important;
+  }
+
+  h2 {
+    font-size: 4rem !important;
+  }
+
+  h3 {
+    font-size: 2.4rem !important;
+  }
+}
+
+.text-dark{
+  color: var(--black-primary) !important;
+}
+
+.primary-text{
+  color: var(--primary-color) !important;
+}
+
+.text-dark-medium{
+  color: var(--black-secondary) !important;
 }

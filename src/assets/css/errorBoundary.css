@@ -1,0 +1,6 @@
+.timer-wrapper {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  color: #0b0b0b;
+}

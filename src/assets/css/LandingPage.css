@@ -1,0 +1,36 @@
+.landingPage {
+  background: url("../images/landing/heroImage.png");
+  background-size: cover;
+}
+.landingPage .heroText {
+  color: var(--blue-primary);
+}
+
+.landingPage .content {
+  padding-top: 5rem;
+}
+
+.landingPage .playStoreImg {
+  object-fit: contain;
+  width: 50%;
+}
+
+.landingPage .appStoreImg {
+  object-fit: contain;
+  width: 50%;
+}
+
+@media (min-width: 1024px) {
+  .landingPage .text-content {
+    padding-left: 3.5rem;
+  }
+  .landingPage .playStoreImg {
+    object-fit: contain;
+    width: auto;
+  }
+
+  .landingPage .appStoreImg {
+    object-fit: contain;
+    width: auto;
+  }
+}
