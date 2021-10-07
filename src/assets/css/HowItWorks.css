@@ -1,0 +1,35 @@
+.howItWorks {
+  background: url("../images/landing/Path 629@2x.png");
+  background-size: cover;
+  padding: 21.2rem 0 21.2rem 0;
+  margin: 0 0 15rem 0;
+}
+
+.howItWorksIcons {
+  width: 10rem !important;
+}
+
+.howItWorks .media {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+}
+
+.howItWorks .arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.howItWorks .directionArrow {
+  width: 40%;
+}
+.howItWorks .arrowDown {
+  transform: rotate(90deg);
+  /*transform: rotateX(90deg);*/
+}
+
+.howItWorks .arrowLeft {
+  transform: rotate(180deg);
+  /*transform: rotateX(90deg);*/
+}

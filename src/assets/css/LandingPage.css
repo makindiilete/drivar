@@ -1,6 +1,41 @@
 .landingPage {
-  background: url("../images/landing/heroImage.png");
+  background: url("../images/landing/heroImage.png") no-repeat;
   background-size: cover;
+  margin-bottom: 15rem;
+}
+
+.landingPage .heroLady {
+  width: 80%;
+}
+.landingPageTwo {
+  background: url("../images/landing/Path 201.svg");
+  background-size: cover;
+}
+.landingPageFour {
+  background: url("../images/landing/Path 223.svg");
+  background-size: cover;
+  margin: 15rem 0 15rem 0;
+  padding-top: 5rem;
+}
+
+.landingPageFive {
+  background: url("../images/landing/Group 123.png") no-repeat;
+  background-size: cover;
+  margin-bottom: 15rem;
+  margin-top: 15rem;
+  padding: 0 0 4rem 0;
+}
+
+.landingPageFive .heroTwo {
+  display: flex;
+  justify-content: center;
+  object-fit: contain;
+  width: 100vw;
+}
+
+.landingPageThree {
+  background: none;
+  margin: 15rem 0 15rem 0;
 }
 .landingPage .heroText {
   color: var(--blue-primary);
@@ -20,7 +55,124 @@
   width: 50%;
 }
 
+.landingPage__about {
+  margin: 14.8rem 5.7rem 14.8rem 5.7rem;
+}
+.landingPage__about_content {
+  text-align: center;
+}
+.landingPage__about h1:last-of-type {
+  margin-bottom: 5.9rem !important;
+}
+.landingPage__about h1:first-of-type {
+  text-align: center;
+}
+
+.landingPage__about_heading {
+  text-align: center;
+}
+
+.landingPage__about_heading:last-of-type {
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.landingPage__about_heading:nth-child(even) {
+  color: var(--blue-secondary);
+  text-align: center;
+}
+
+.landingPage__about_heading .blueLine {
+  border: 1px solid var(--blue-secondary);
+  width: 3rem;
+}
+.landingPage__about_line {
+  display: none;
+}
+
+/*CARDS*/
+.landingPage__cards {
+  margin-bottom: 14.8rem;
+}
+.landingPage__card {
+  background-color: var(--white-primary);
+  border: 1px solid var(--white-primary);
+  border-radius: 20px;
+  box-shadow: 0 0 25px grey;
+  height: 80vh;
+  overflow: scroll;
+  padding: 3rem 5rem 3rem 5rem;
+}
+
+.firstCar {
+  left: 5vh;
+  max-width: 100%;
+  top: 65vh;
+  width: 30vh;
+}
+.secondCar {
+  left: 5vh;
+  max-width: 100%;
+  top: 65vh;
+  width: 200px;
+}
+
+.landingPage__card:first-of-type {
+  margin-bottom: 4rem;
+}
+
+.landingPageTwo .lowestFare {
+  align-items: center;
+  background: var(--white-primary);
+  border: 1px solid var(--blue-secondary);
+  display: flex !important;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+.landingPageTwo .alwaysOnTime {
+  align-items: center;
+  display: flex !important;
+  margin: 2rem 0 2rem 0;
+}
+
+.learnMore {
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+@media (min-width: 375px) and (max-width: 500px) {
+  .landingPage__card {
+    height: 60vh;
+  }
+  .firstCar {
+    left: 5vh;
+    max-width: 100%;
+    top: 45vh;
+    width: 30vh;
+  }
+  .secondCar {
+    left: 5vh;
+    max-width: 100%;
+    top: 45vh;
+    width: 200px;
+  }
+}
+
+@media (min-width: 768px) {
+  .downloadTheApp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*padding-bottom: 10rem;*/
+  }
+}
+
 @media (min-width: 1024px) {
+  .landingPage {
+    background: url("../images/landing/heroImage.png") no-repeat;
+    background-size: contain;
+  }
   .landingPage .text-content {
     padding-left: 3.5rem;
   }
@@ -32,5 +184,90 @@
   .landingPage .appStoreImg {
     object-fit: contain;
     width: auto;
+  }
+  .landingPage__about_heading:nth-child(even) {
+    color: var(--blue-secondary);
+    margin-left: 37vw;
+    text-align: unset;
+  }
+  .landingPage__about_heading:last-of-type {
+    color: var(--primary-color);
+    margin-left: 37vw;
+    text-align: unset;
+  }
+  .landingPage__about_line {
+    display: inline-block;
+    height: 2rem;
+    width: 12rem;
+  }
+  .landingPage__about_content {
+    margin: 0 18vw 0 18vw;
+  }
+
+  .landingPage__card {
+    background-color: var(--white-primary);
+    border: 1px solid var(--white-primary);
+    border-radius: 20px;
+    height: 80vh;
+    overflow: scroll;
+    padding: 5rem 10rem 5rem 10rem;
+  }
+
+  .firstCar {
+    left: -5vh;
+    max-width: 100%;
+    top: 55vh;
+    width: auto;
+  }
+
+  .secondCar {
+    max-width: 100%;
+    right: -5vh;
+    top: 50vh;
+    width: auto;
+  }
+
+  .landingPageTwo .heroTwo {
+    padding-left: 10vw;
+  }
+
+  .landingPageTwo .lowestFare {
+    width: 31.9rem;
+  }
+
+  .landingPageThree .text-content {
+    padding-left: 10vw;
+  }
+
+  .landingPageThree .applyToDrive {
+    margin-left: 10rem;
+  }
+  .landingPageThree .landingPage__about_line {
+    height: 1rem;
+    width: 25rem;
+  }
+
+  .landingPageFour {
+    padding-top: 16rem;
+  }
+
+  .landingPageFour .heroTwo {
+    padding-left: 10vw;
+  }
+
+  .landingPageFive {
+    background-size: contain;
+    margin-bottom: 15rem;
+    margin-top: 15rem;
+    padding: 0;
+  }
+
+  .landingPageFive .heroTwo {
+    max-width: 100%;
+    width: 60%;
+  }
+
+  .downloadTheApp {
+    padding-bottom: 10rem;
   }
 }

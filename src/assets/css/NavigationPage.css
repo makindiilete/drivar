@@ -1,0 +1,95 @@
+/*Navigation bars*/
+.nav {
+  align-items: center;
+  background: var(--white-primary);
+  display: flex;
+  flex-wrap: wrap;
+  /*justify-content: space-between;*/
+  /*padding: 0 10rem;*/
+  box-shadow: 0 5px 20px #f7f7f7;
+}
+
+.nav__list,
+.nav__list__reg {
+  margin: 0;
+  /*width: 100%;*/
+  list-style: none;
+  padding-inline-start: 0 !important;
+  width: 100vw;
+}
+
+.nav__item {
+  border-bottom: 1px solid var(--white-medium);
+  padding: 0.5rem 2rem;
+}
+
+.nav__reg {
+  display: flex;
+}
+
+.nav__toggler {
+  cursor: pointer;
+  opacity: 0.5;
+  transition: all 0.15s;
+  right: 20px;
+  font-size: 3rem;
+  top: 2rem;
+}
+
+.nav__brand {
+  /*ds pushes the logo down a bit to get rid of d excess space at the bottom*/
+  /*margin-bottom: -5px;*/
+}
+
+#isHidden {
+  display: none;
+}
+
+.collapsible__content {
+  transition: all 5s;
+}
+
+@media screen and (min-width: 768px) {
+  #isHidden {
+    display: inline-flex;
+  }
+  .nav {
+    justify-content: space-between;
+    padding: 0 10rem;
+  }
+  .nav__toggler {
+    display: none;
+  }
+
+  .nav__list {
+    display: flex;
+    font-size: 1.6rem;
+    max-height: 100vh;
+    opacity: 1;
+    width: auto;
+  }
+
+  .nav__items {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .nav__item {
+    border: 0;
+  }
+
+  .nav__item:hover {
+    color: var(--primary-color);
+    cursor: pointer;
+  }
+
+  .nav__first__column,
+  .nav__second__column {
+    display: flex;
+    align-items: center;
+  }
+  .nav__item__company {
+    border-right: 1px solid var(--black-secondary);
+  }
+}

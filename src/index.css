@@ -1,37 +1,36 @@
 @font-face {
   font-family: "neue";
-  src: url("assets/fonts/Helvetica-Neue-Bold.ttf")
-  format("truetype");
+  src: url("assets/fonts/Helvetica-Neue-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: "neue";
-  src: url("assets/fonts/Helvetica-Neue-Medium.ttf")
-  format("truetype");
+  src: url("assets/fonts/Helvetica-Neue-Medium.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "neue";
-  src: url("assets/fonts/Helvetica-Neue-Regular.ttf")
-  format("truetype");
+  src: url("assets/fonts/Helvetica-Neue-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
-:root{
-  --primary-color: #EE6F57;
+:root {
+  --primary-color: rgba(238, 111, 87, 0.64);
   --secondary-color: #00d9ff;
-  --black-primary:#1A1A1A;
-  --black-secondary:#2C2C2C;
-  --blue-primary:#080760;
-  --blue-secondary:#98AEF6;
-  --blue-light: #BECFF580;
-  --white-primary:#FFFFFF;
-  --white-medium:#FCFCFC;
+  --black-primary: #1a1a1a;
+  --black-secondary: #2c2c2c;
+  --blue-primary: #080760;
+  --blue-secondary: #98aef6;
+  --blue-tertiary: #1794d7;
+  --blue-light: #becff580;
+  --white-primary: #ffffff;
+  --white-medium: #fcfcfc;
+  --white-tertiary: #f7f7f7;
 }
 
 *,
@@ -50,8 +49,8 @@ body {
   background-color: var(--white-medium) !important;
 }
 .row {
-   margin-right: 0 !important;
-   margin-left: 0!important;
+  margin-right: 0 !important;
+  margin-left: 0 !important;
 }
 
 /*Typography*/
@@ -61,6 +60,7 @@ h3 {
   /*ds place 1rem space btw our heading and their text so it can look closer to what we have on the mockup*/
   line-height: 1.1 !important;
   margin-bottom: 1rem !important;
+  font-weight: bold !important;
 }
 
 h1 {
@@ -84,7 +84,7 @@ p {
 /*Desktop*/
 @media screen and (min-width: 1024px) {
   body {
-    font-size: 1.8rem !important;
+    font-size: 1.5rem !important;
   }
 
   h1 {
@@ -100,14 +100,20 @@ p {
   }
 }
 
-.text-dark{
+.text-dark {
   color: var(--black-primary) !important;
 }
 
-.primary-text{
+.primary-text {
   color: var(--primary-color) !important;
 }
+.secondary-text {
+  color: var(--blue-secondary) !important;
+}
+.tertiary-text {
+  color: var(--blue-tertiary) !important;
+}
 
-.text-dark-medium{
+.text-dark-medium {
   color: var(--black-secondary) !important;
 }

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72">
+  <g id="Group_4341" data-name="Group 4341" transform="translate(-262.434 -4344.434)">
+    <rect id="Rectangle_718" data-name="Rectangle 718" width="72" height="72" rx="21" transform="translate(262.434 4344.434)" fill="#f0f5ff"/>
+    <g id="Group_81" data-name="Group 81" transform="translate(5.934 -210.066)">
+      <rect id="Rectangle_720" data-name="Rectangle 720" width="61" height="61" transform="translate(262.5 4560.5)" fill="none" opacity="0"/>
+      <path id="Icon_material-lock" data-name="Icon material-lock" d="M26.617,11.809H25.145V8.863a7.363,7.363,0,0,0-14.727,0v2.945H8.945A2.954,2.954,0,0,0,6,14.754V29.48a2.954,2.954,0,0,0,2.945,2.945H26.617a2.954,2.954,0,0,0,2.945-2.945V14.754A2.954,2.954,0,0,0,26.617,11.809ZM17.781,25.063a2.945,2.945,0,1,1,2.945-2.945A2.954,2.954,0,0,1,17.781,25.063Zm4.565-13.254h-9.13V8.863a4.565,4.565,0,1,1,9.13,0Z" transform="translate(274.719 4573.537)" fill="#98aef6"/>
+    </g>
+  </g>
+</svg>

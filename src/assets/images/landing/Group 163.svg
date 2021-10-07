@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="224.85" height="224.85" viewBox="0 0 224.85 224.85">
+  <defs>
+    <clipPath id="clip-path">
+      <circle id="Ellipse_69" data-name="Ellipse 69" cx="112.425" cy="112.425" r="112.425" transform="translate(554 3917.075)" fill="#d0eeff"/>
+    </clipPath>
+  </defs>
+  <g id="Group_163" data-name="Group 163" transform="translate(-265 -3554.075)">
+    <circle id="Ellipse_68" data-name="Ellipse 68" cx="112.425" cy="112.425" r="112.425" transform="translate(265 3554.075)" fill="#d0eeff"/>
+    <g id="Mask_Group_3" data-name="Mask Group 3" transform="translate(-289 -363)" clip-path="url(#clip-path)">
+      <g id="reading" transform="translate(536.748 3955.5)">
+        <g id="Group_113" data-name="Group 113" transform="translate(91.387 200.606)">
+          <path id="Path_307" data-name="Path 307" d="M158.82,486.167h-8.262a2.746,2.746,0,0,0-2.746,2.746v5.169a2.746,2.746,0,0,0,2.746,2.746h8.262a2.746,2.746,0,0,0,2.746-2.746v-5.169A2.746,2.746,0,0,0,158.82,486.167Z" transform="translate(-147.813 -486.167)" fill="#823214"/>
+          <path id="Path_308" data-name="Path 308" d="M303.444,486.167h-8.262a2.746,2.746,0,0,0-2.746,2.746v5.169a2.746,2.746,0,0,0,2.746,2.746h8.262a2.746,2.746,0,0,0,2.746-2.746v-5.169A2.746,2.746,0,0,0,303.444,486.167Z" transform="translate(-232.761 -486.167)" fill="#823214"/>
+        </g>
+        <g id="Group_116" data-name="Group 116" transform="translate(51.748 0)">
+          <g id="XMLID_3777_" transform="translate(46.802 116.103)">
+            <path id="Path_309" data-name="Path 309" d="M263.972,369.684l-30.1-62.722-56.932-1.446a12.072,12.072,0,1,1,.613-24.137l64.315,1.634a12.072,12.072,0,0,1,10.577,6.845l33.3,69.38a12.073,12.073,0,0,1-21.768,10.447Z" transform="translate(-165.173 -281.375)" fill="#080760"/>
+          </g>
+          <g id="XMLID_3775_" transform="translate(49.857 44.537)">
+            <path id="Path_310" data-name="Path 310" d="M215.16,144.446l-34.922-8.581a10.06,10.06,0,1,1,4.8-19.54l31.527,7.746,33.39-15.228a10.061,10.061,0,0,1,8.349,18.307l-36.57,16.679A10.065,10.065,0,0,1,215.16,144.446Z" transform="translate(-172.575 -107.934)" fill="#533b26"/>
+          </g>
+          <g id="Group_114" data-name="Group 114" transform="translate(113.318 40.346)">
+            <path id="Path_311" data-name="Path 311" d="M350.132,98.467a2.628,2.628,0,0,0-4.063.648l-19.358,34.339a2.627,2.627,0,0,0,.515,3.228l20.6,18.855L369.829,116.5Z" transform="translate(-326.372 -97.777)" fill="#87afb9"/>
+          </g>
+          <g id="Group_115" data-name="Group 115" transform="translate(113.526 59.068)">
+            <path id="Path_312" data-name="Path 312" d="M349.848,148.241a8.975,8.975,0,0,0-5.634,4.3l-16.975,30.112a2.746,2.746,0,0,0,3.06,4.011l17.82-4.473,22.007-39.038Z" transform="translate(-326.877 -143.151)" fill="#b4d7dc"/>
+          </g>
+          <path id="Path_313" data-name="Path 313" d="M184.8,135.824a15,15,0,0,0-16.749-13.019l-25.326,3.174a15,15,0,0,0-12.827,17.91l14.98,72.734a12.811,12.811,0,0,0,17.58,9.2l31.911-13.63Z" transform="translate(-97.466 -72.063)" fill="#becff5"/>
+          <path id="Path_314" data-name="Path 314" d="M172.652,16.843a22.205,22.205,0,1,0-16.18,26.914,22.205,22.205,0,0,0,16.18-26.914Z" transform="translate(-97.061 0)" fill="#533b26"/>
+          <path id="Path_315" data-name="Path 315" d="M262.84,219.605H262.7l-34.277.472-5.446-9.475-9.187,1.4-8.806,7.676,8.942,15.557a10.061,10.061,0,0,0,8.722,5.047h.139l40.19-.553a10.06,10.06,0,0,0-.136-20.12Z" transform="translate(-141.753 -123.702)" fill="#533b26"/>
+          <path id="Path_316" data-name="Path 316" d="M160.375,209.918H97.85L85.9,153.642a17.263,17.263,0,1,0-33.773,7.169L77.2,278.923a11.419,11.419,0,0,0,11.17,9.048H172a9.382,9.382,0,0,0,9.382-9.382V230.923A21.006,21.006,0,0,0,160.375,209.918Z" transform="translate(-51.748 -82.211)" fill="#ee6f57"/>
+          <path id="Path_317" data-name="Path 317" d="M185.948,181.336l17.993-9.072-12.58-21.885a10.061,10.061,0,0,0-17.445,10.027Z" transform="translate(-122.719 -85.363)" fill="#98aef6"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

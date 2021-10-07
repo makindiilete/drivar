@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="224.85" height="224.85" viewBox="0 0 224.85 224.85">
+  <g id="Group_109" data-name="Group 109" transform="translate(-1135 -2594.075)">
+    <circle id="Ellipse_63" data-name="Ellipse 63" cx="112.425" cy="112.425" r="112.425" transform="translate(1135 2594.075)" fill="#e6ecff"/>
+    <g id="qr-scan" transform="translate(1147.238 2639.41)">
+      <g id="Group_4327" data-name="Group 4327" transform="translate(48.676)">
+        <g id="Group_4326" data-name="Group 4326">
+          <g id="Group_4325" data-name="Group 4325">
+            <g id="Group_4324" data-name="Group 4324">
+              <g id="Group_4323" data-name="Group 4323">
+                <g id="Group_4322" data-name="Group 4322">
+                  <path id="Path_630" data-name="Path 630" d="M124.722,141.025h-64.7a11.35,11.35,0,0,1-11.35-11.35V11.35A11.35,11.35,0,0,1,60.026,0h64.7a11.35,11.35,0,0,1,11.35,11.35V129.675A11.35,11.35,0,0,1,124.722,141.025Z" transform="translate(-48.676)" fill="#080760"/>
+                  <path id="Path_631" data-name="Path 631" d="M302.372,0H293.86a11.35,11.35,0,0,1,11.35,11.35V129.675a11.35,11.35,0,0,1-11.35,11.35h8.512a11.35,11.35,0,0,0,11.35-11.35V11.35A11.35,11.35,0,0,0,302.372,0Z" transform="translate(-226.327)" fill="#262586"/>
+                  <path id="Path_632" data-name="Path 632" d="M135.609,33.175a3.836,3.836,0,0,1-3.836,3.836H97.76a3.836,3.836,0,0,1-3.836-3.836,2.27,2.27,0,0,0-2.27-2.27H83.837a4.256,4.256,0,0,0-4.256,4.256V150.649a4.256,4.256,0,0,0,4.256,4.256H145.7a4.256,4.256,0,0,0,4.256-4.256V35.161a4.256,4.256,0,0,0-4.256-4.256h-7.817a2.27,2.27,0,0,0-2.27,2.27Z" transform="translate(-71.069 -22.393)" fill="#f9f7f8"/>
+                </g>
+                <circle id="Ellipse_156" data-name="Ellipse 156" cx="2.128" cy="2.128" r="2.128" transform="translate(41.57 5.181)" fill="#335e80"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+      <g id="Group_4338" data-name="Group 4338" transform="translate(80.965 89.397)">
+        <path id="Path_646" data-name="Path 646" d="M243.285,353.773H170.444a4.54,4.54,0,0,1-4.54-4.54V329.1a4.54,4.54,0,0,1,4.54-4.54h72.841a4.54,4.54,0,0,1,4.54,4.54v20.131A4.54,4.54,0,0,1,243.285,353.773Z" transform="translate(-165.904 -324.562)" fill="#ee6f57"/>
+        <path id="Path_647" data-name="Path 647" d="M424.448,324.562h-8.512a4.54,4.54,0,0,1,4.54,4.54v20.131a4.54,4.54,0,0,1-4.54,4.54h8.512a4.54,4.54,0,0,0,4.54-4.54V329.1A4.54,4.54,0,0,0,424.448,324.562Z" transform="translate(-347.067 -324.562)" fill="#eb5336"/>
+        <text id="BOOK" transform="translate(8.602 21.195)" fill="#fff" font-size="20" font-family="HelveticaNeue-Bold, Helvetica Neue" font-weight="700"><tspan x="0" y="0">BOOK</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>
