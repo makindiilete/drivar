@@ -5,6 +5,8 @@ import createAcct from "../assets/images/landing/man (1).svg";
 import bookOrRide from "../assets/images/landing/Group 109.svg";
 import meetDriver from "../assets/images/landing/Group 4339.svg";
 import seeRide from "../assets/images/landing/Group 162.svg";
+import sitRelax from "../assets/images/landing/Group 163.svg";
+import rating from "../assets/images/landing/Group 117.svg";
 // import "../assets/css/LandingPage.css";
 
 const HowItWorks = (props) => {
@@ -20,7 +22,7 @@ const HowItWorks = (props) => {
             packages gives the best of mind that you or your package is in the
             safest possible hands as Ryva’s.
           </div>
-          <div className="col-md-6"></div>
+          <div className="col-md-6" />
         </div>
         <br />
         <br />
@@ -66,9 +68,9 @@ const HowItWorks = (props) => {
         <br />
         <br />
         <div className="row">
-          <div className="col-md-4 media"></div>
+          <div className="col-md-4 media" />
 
-          <div className="col-md-4 "></div>
+          <div className="col-md-4 " />
           <div className="col-md-4 arrow">
             <img src={arrow} className="directionArrow arrowDown" />
           </div>
@@ -109,6 +111,60 @@ const HowItWorks = (props) => {
               <small>
                 Make money, keep your tips, and use in-app tools to help
                 maximize your earnings.
+              </small>
+            </div>
+          </div>
+          {/* /.col-md-4 */}
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <div className="row">
+          <div className="col-md-4 arrow">
+            <img src={arrow} className="directionArrow arrowDown" />
+          </div>
+          <div className="col-md-4" />
+
+          <div className="col-md-4 " />
+
+          {/* /.col-md-4 */}
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <div className="row">
+          <div className="col-md-4 media">
+            <img
+              className="mr-3 howItWorksIcons"
+              src={sitRelax}
+              alt="Generic placeholder image"
+            />
+            <div className="media-body">
+              <h5 className="mt-0 font-weight-bolder">
+                Sit back, Let us handle your ride/package
+              </h5>
+              <small>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna.
+              </small>
+            </div>
+          </div>
+          <div className="col-md-4 arrow">
+            <img src={arrow} className="directionArrow" />
+          </div>
+          <div className="col-md-4 media">
+            <img
+              className="mr-3 howItWorksIcons"
+              src={rating}
+              alt="Generic placeholder image"
+            />
+            <div className="media-body">
+              <h5 className="mt-0 font-weight-bolder">Rate your trip</h5>
+              <small>
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                diam nonumy eirmod tempor invidunt ut labore et dolore magna.
               </small>
             </div>
           </div>

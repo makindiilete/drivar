@@ -1,0 +1,25 @@
+.usingRyvaApp {
+  padding: 21.2rem 0 21.2rem 0;
+}
+
+.usingRyvaApp .heading {
+  margin-bottom: 5.9rem !important;
+}
+
+.usingRyvaApp .logo {
+  width: 7.2rem !important;
+  height: 7.2rem !important;
+  margin-bottom: 2rem !important;
+}
+
+.usingRyvaApp .list-item {
+  padding-left: 1rem;
+}
+
+.usingRyvaApp .list-item li::marker {
+  color: var(--primary-color) !important;
+}
+
+.usingRyvaApp .list-item li {
+  padding-bottom: 1rem;
+}

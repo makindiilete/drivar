@@ -1,9 +1,13 @@
 import React from "react";
 import "../assets/css/LandingPage.css";
-import HowItWorks from "../components/HowItWorks";
+import MoveWithComfort from "../components/MoveWithComfort";
 
 const LandingPage = (props) => {
-  return <HowItWorks />;
+  return (
+    <>
+      <MoveWithComfort />
+    </>
+  );
 };
 
 export default LandingPage;

@@ -1,7 +1,6 @@
 .landingPage {
   background: url("../images/landing/heroImage.png") no-repeat;
   background-size: cover;
-  margin-bottom: 15rem;
 }
 
 .landingPage .heroLady {
@@ -171,7 +170,8 @@
 @media (min-width: 1024px) {
   .landingPage {
     background: url("../images/landing/heroImage.png") no-repeat;
-    background-size: contain;
+    background-size: cover;
+    margin: 0 10rem 15rem 10rem;
   }
   .landingPage .text-content {
     padding-left: 3.5rem;

@@ -41,7 +41,6 @@ const MoveWithComfort = (props) => {
         </div>
         {/* /.col-md-6 */}
       </div>
-      {/* /.row */}
     </section>
   );
 };

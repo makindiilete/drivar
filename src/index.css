@@ -117,3 +117,9 @@ p {
 .text-dark-medium {
   color: var(--black-secondary) !important;
 }
+
+@media only screen and (max-width: 500px) {
+  .col-md-4 {
+    margin-bottom: 2rem !important;
+  }
+}
