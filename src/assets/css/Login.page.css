@@ -1,0 +1,51 @@
+#login .form-heading {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.imageLeft {
+  background: url("../images/login/loginPageImage.png") no-repeat;
+  background-size: cover;
+  padding-bottom: 3rem;
+}
+
+#login h3 {
+  margin: 0 !important;
+}
+
+@media (min-width: 1024px) {
+  #login {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+  }
+
+  .imageLeft {
+    background: url("../images/login/loginPageImage.png") no-repeat;
+    background-size: contain;
+    height: 70vh;
+  }
+  .imageRight {
+    margin-top: 7rem;
+  }
+
+  #login .text {
+    margin: 0 4rem 0 4rem;
+  }
+
+  #login .mobile {
+    height: 80%;
+    object-fit: contain;
+    margin-left: -7rem;
+  }
+
+  #login .content {
+    /*background: red;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+  }
+}
