@@ -6,13 +6,13 @@ import "../assets/css/LandingPage.css";
 
 const DownloadTheApp = (props) => {
   return (
-    <section className="container landingPage landingPageFive">
+    <section className="container landingPageFive">
       <div className="row content">
         <div className="col-md-6">
           <img
             src={heroImageFive}
             alt="hero lady"
-            className="img-fluid heroTwo"
+            className="img-fluid mobilePhone"
             data-aos="fade-right"
           />
         </div>
@@ -31,7 +31,7 @@ const DownloadTheApp = (props) => {
               eos qui ratione voluptatem sequi nesciunt.
             </p>
 
-            <div className="d-flex">
+            <div className="d-flex justify-content-center">
               <img
                 className="pr-3 playStoreImg"
                 src={google}

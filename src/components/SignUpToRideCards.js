@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "antd";
-import firstCar from "../assets/images/landing/pngwing.com (6).png";
-import secondCar from "../assets/images/landing/SVG/cardGroup.svg";
+import firstCar from "../assets/images/landing/kisspng-mid-size-car-2009-toyota-camry-2010-toyota-camry-5ae488da723324.1045384415249266824678.png";
+import secondCar from "../assets/images/landing/SVG/cardGroup.png";
 import "../assets/css/LandingPage.css";
 
 const SignUpToRideCards = (props) => {
@@ -15,14 +15,18 @@ const SignUpToRideCards = (props) => {
                 Sign up to Ride with{" "}
                 <span className="secondary-text">Drivar</span>
               </h2>
-              <p className="text-center">
+              {/*<p className="text-center">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Aliquam consequuntur corporis culpa dignissimos harum labore
                 laudantium, nesciunt optio quam quasi quo, reiciendis saepe
                 similique voluptatum!
-              </p>
+              </p>*/}
               <p className="text-center">
-                <Button type="primary" size="large">
+                <Button
+                  type="primary"
+                  size="large"
+                  style={{ marginTop: "9rem" }}
+                >
                   Sign Up
                 </Button>
               </p>
@@ -41,12 +45,14 @@ const SignUpToRideCards = (props) => {
                 Sign up to Drive or Deliver with{" "}
                 <span className="primary-text">Drivar</span>{" "}
               </h2>
-              <p className="text-center">
+              {/*  <p className="text-center">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                 Aliquam consequuntur corporis culpa dignissimos harum labore
                 laudantium, nesciunt optio quam quasi quo, reiciendis saepe
                 similique voluptatum!
-              </p>
+              </p>*/}
+              <br />
+              <br />
               <p className="text-center">
                 <Button type="primary" size="large">
                   Sign Up

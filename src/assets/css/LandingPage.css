@@ -44,14 +44,14 @@
   padding-top: 5rem;
 }
 
-.landingPage .playStoreImg {
+.playStoreImg {
   object-fit: contain;
-  width: 50%;
+  width: 36%;
 }
 
-.landingPage .appStoreImg {
+.appStoreImg {
   object-fit: contain;
-  width: 50%;
+  width: 35%;
 }
 
 .landingPage__about {
@@ -98,7 +98,7 @@
   border: 1px solid var(--white-primary);
   border-radius: 20px;
   box-shadow: 0 0 25px grey;
-  height: 80vh;
+  height: 60vh;
   overflow: scroll;
   padding: 3rem 5rem 3rem 5rem;
 }
@@ -106,13 +106,13 @@
 .firstCar {
   left: 5vh;
   max-width: 100%;
-  top: 65vh;
+  top: 30vh;
   width: 30vh;
 }
 .secondCar {
   left: 5vh;
   max-width: 100%;
-  top: 65vh;
+  top: 30vh;
   width: 200px;
 }
 
@@ -138,6 +138,10 @@
 .learnMore {
   border: 1px solid var(--primary-color);
   color: var(--primary-color);
+}
+
+.landingPageFive .mobilePhone {
+  width: 60% !important;
 }
 
 @media (min-width: 375px) and (max-width: 500px) {
@@ -176,12 +180,12 @@
   .landingPage .text-content {
     padding-left: 3.5rem;
   }
-  .landingPage .playStoreImg {
+  .playStoreImg {
     object-fit: contain;
     width: auto;
   }
 
-  .landingPage .appStoreImg {
+  .appStoreImg {
     object-fit: contain;
     width: auto;
   }
@@ -214,16 +218,16 @@
   }
 
   .firstCar {
-    left: -5vh;
+    left: -1vh;
     max-width: 100%;
-    top: 55vh;
+    top: 45vh;
     width: auto;
   }
 
   .secondCar {
     max-width: 100%;
     right: -5vh;
-    top: 50vh;
+    top: 35vh;
     width: auto;
   }
 
@@ -269,5 +273,6 @@
 
   .downloadTheApp {
     padding-bottom: 10rem;
+    padding-top: 10rem;
   }
 }
