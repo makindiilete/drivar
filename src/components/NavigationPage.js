@@ -9,6 +9,7 @@ import * as icons from "@fortawesome/free-solid-svg-icons";
 
 const NavigationPage = (props) => {
   const [isExpanded, setIsExpanded] = useState(false);
+
   return (
     <>
       <header>
@@ -52,7 +53,9 @@ const NavigationPage = (props) => {
                   Login
                 </li>
                 <li className="nav__item">
-                  <Button type="primary">Sign Up</Button>
+                  <a href="#download">
+                    <Button type="primary">Sign Up</Button>
+                  </a>
                 </li>
               </ul>
             </Fade>

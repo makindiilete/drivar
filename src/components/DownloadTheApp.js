@@ -6,7 +6,7 @@ import "../assets/css/LandingPage.css";
 
 const DownloadTheApp = (props) => {
   return (
-    <section className="container landingPageFive">
+    <section className="container landingPageFive" id="download">
       <div className="row content">
         <div className="col-md-6">
           <img

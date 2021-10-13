@@ -146,18 +146,18 @@
 
 @media (min-width: 375px) and (max-width: 500px) {
   .landingPage__card {
-    height: 60vh;
+    height: 50vh;
   }
   .firstCar {
     left: 5vh;
     max-width: 100%;
-    top: 45vh;
+    top: 25vh;
     width: 30vh;
   }
   .secondCar {
     left: 5vh;
     max-width: 100%;
-    top: 45vh;
+    top: 30vh;
     width: 200px;
   }
 }
