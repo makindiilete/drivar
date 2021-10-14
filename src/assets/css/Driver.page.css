@@ -1,0 +1,17 @@
+.driver {
+  margin-top: -22rem;
+}
+.driver__app {
+  margin-bottom: 15rem;
+}
+
+@media (min-width: 1201px) {
+  .driver__app__text {
+    padding: 0 9rem 0 9rem;
+  }
+
+  .driver__app_image {
+    margin-left: -2rem;
+    width: 88.4rem;
+  }
+}

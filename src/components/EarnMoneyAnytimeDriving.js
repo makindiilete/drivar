@@ -1,5 +1,5 @@
 import React from "react";
-import landingPageThreeIconOne from "../assets/images/landing/Group 64.svg";
+import landingPageThreeIconOne from "../assets/images/driver/Group 644.svg";
 import landingPageThreeIconTwo from "../assets/images/landing/Group 61.svg";
 import landingPageThreeIconThree from "../assets/images/landing/Group 62.svg";
 import primaryLine from "../assets/images/landing/primaryLine.svg";
@@ -81,6 +81,13 @@ const EarnMoneyAnytimeDriving = (props) => {
               <Button type="primary" size="large" className="applyToDrive">
                 Apply to drive
               </Button>
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
             </div>
           </div>
         </div>

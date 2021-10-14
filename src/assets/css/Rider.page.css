@@ -1,0 +1,60 @@
+.rider__hero-area {
+  background: url("../images/rider/Group-127-small.png");
+  background-size: cover;
+  margin-top: -7rem;
+}
+
+.rider__hero-area {
+  height: 62.4rem;
+}
+
+.rider__hero-area__btn {
+  margin-top: 5.6rem;
+}
+
+.rider__hero-area__heading {
+  color: #fff;
+  line-height: 1.5 !important;
+}
+
+.rider__hero-area {
+  align-items: center;
+  display: flex;
+}
+.rider__why__heading {
+  margin: 5.1rem 0 5.1rem 0;
+}
+
+.rider__why__card {
+  background: #fff;
+  border: 1px solid var(--blue-secondary);
+  height: 26.4rem;
+  margin-bottom: 2rem;
+  max-width: 100%;
+  padding: 2rem 2rem 2rem 2rem;
+  width: 48.6rem;
+  box-shadow: 0 5px 20px #9a9999;
+}
+
+.rider__why__card__icon {
+  height: 7.2rem;
+  max-width: 100%;
+  width: 7.2rem;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 1024px) {
+  .rider__hero-area {
+    background: url("../images/rider/Group-127.png");
+    background-size: cover;
+    margin-top: -7rem;
+  }
+  .rider__why__card {
+    margin-bottom: 0;
+  }
+  .rider__why__card__icon {
+    height: 5.2rem;
+    max-width: 100%;
+    width: 5.2rem;
+  }
+}

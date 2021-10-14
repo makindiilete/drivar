@@ -3,4 +3,7 @@ export default Object.freeze({
   HOME: "/",
   LOGIN: "/login",
   RIDE: "/ride",
+  COMPANY: "/company",
+  DRIVE: "/drive",
+  SHIP: "/ship",
 });

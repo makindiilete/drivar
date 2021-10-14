@@ -7,6 +7,7 @@ import LandingPage from "./pages/Landing.page";
 import routes from "./routes";
 import RidePage from "./pages/Ride.page";
 import LoginPage from "./pages/Login.page";
+import DrivePage from "./pages/Drive.page";
 
 AOS.init();
 
@@ -19,6 +20,7 @@ function App() {
           <PublicAreaRoute exact component={LandingPage} path={routes.HOME} />
           <PublicAreaRoute exact component={LoginPage} path={routes.LOGIN} />
           <PublicAreaRoute exact component={RidePage} path={routes.RIDE} />
+          <PublicAreaRoute exact component={DrivePage} path={routes.DRIVE} />
         </Switch>
       </Router>
     </div>

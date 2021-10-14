@@ -9,6 +9,10 @@
   box-shadow: 0 5px 20px #f7f7f7;
 }
 
+.nav__item.active {
+  color: var(--primary-color);
+}
+
 .nav__list,
 .nav__list__reg {
   margin: 0;

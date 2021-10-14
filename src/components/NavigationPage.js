@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { MenuFoldOutlined, CloseSquareOutlined } from "@ant-design/icons";
 import { Button } from "antd";
 import logo from "../assets/images/landing/logo.png";
@@ -6,12 +6,19 @@ import "../assets/css/NavigationPage.css";
 import Fade from "react-reveal/Fade";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import * as icons from "@fortawesome/free-solid-svg-icons";
-import { useHistory } from "react-router-dom";
+import { useHistory, useLocation } from "react-router-dom";
 import routes from "../routes";
 
 const NavigationPage = (props) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const history = useHistory();
+  const location = useLocation();
+
+  const [active, setActive] = useState(null);
+
+  useEffect(() => {
+    setActive(location?.pathname);
+  }, [location?.pathname]);
 
   return (
     <>
@@ -33,22 +40,37 @@ const NavigationPage = (props) => {
               </li>
               <Fade top>
                 <li
-                  className="nav__item nav__item__company"
+                  className={`nav__item nav__item__company${
+                    active === routes.COMPANY ? " active" : ""
+                  } `}
                   id={!isExpanded && "isHidden"}
                 >
                   Company
                 </li>
                 <li
-                  className="nav__item"
+                  className={`nav__item${
+                    active === routes.RIDE ? " active" : ""
+                  } `}
                   id={!isExpanded && "isHidden"}
                   onClick={() => history.push(routes.RIDE)}
                 >
                   Ride
                 </li>
-                <li className="nav__item" id={!isExpanded && "isHidden"}>
+                <li
+                  className={`nav__item${
+                    active === routes.DRIVE ? " active" : ""
+                  } `}
+                  id={!isExpanded && "isHidden"}
+                  onClick={() => history.push(routes.DRIVE)}
+                >
                   Drive
                 </li>
-                <li className="nav__item" id={!isExpanded && "isHidden"}>
+                <li
+                  className={`nav__item${
+                    active === routes.SHIP ? " active" : ""
+                  } `}
+                  id={!isExpanded && "isHidden"}
+                >
                   Ship
                 </li>
               </Fade>
