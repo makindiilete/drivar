@@ -1,17 +1,14 @@
 import React from "react";
 import ErrorBoundary from "../Utils/ErrorBoundary";
-import ResponsiveDrawer from "../components/ResponsiveDrawer";
+import NavigationPage from "../components/NavigationPage";
+import FooterPage from "../components/FooterPage";
 
 const PublicAreaBase = ({ children }) => {
   return (
     <div>
-      <ResponsiveDrawer />
-      <br />
-      <br />
-      <br />
-      {/*<div>{children}</div>*/}
+      <NavigationPage />
       <ErrorBoundary>{children}</ErrorBoundary>
-      {/*<Footer />*/}
+      <FooterPage />
     </div>
   );
 };

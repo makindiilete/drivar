@@ -6,9 +6,12 @@ import "../assets/css/NavigationPage.css";
 import Fade from "react-reveal/Fade";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import * as icons from "@fortawesome/free-solid-svg-icons";
+import { useHistory } from "react-router-dom";
+import routes from "../routes";
 
 const NavigationPage = (props) => {
   const [isExpanded, setIsExpanded] = useState(false);
+  const history = useHistory();
 
   return (
     <>
@@ -22,7 +25,10 @@ const NavigationPage = (props) => {
               >
                 {!isExpanded ? <MenuFoldOutlined /> : <CloseSquareOutlined />}
               </span>
-              <li className="nav__item">
+              <li
+                className="nav__item"
+                onClick={() => history.push(routes.HOME)}
+              >
                 <img src={logo} alt="home page logo" className="img-fluid" />
               </li>
               <Fade top>
@@ -32,7 +38,11 @@ const NavigationPage = (props) => {
                 >
                   Company
                 </li>
-                <li className="nav__item" id={!isExpanded && "isHidden"}>
+                <li
+                  className="nav__item"
+                  id={!isExpanded && "isHidden"}
+                  onClick={() => history.push(routes.RIDE)}
+                >
                   Ride
                 </li>
                 <li className="nav__item" id={!isExpanded && "isHidden"}>
@@ -48,7 +58,10 @@ const NavigationPage = (props) => {
                 className="list nav__list collapsible__content nav__second__column"
                 id={!isExpanded && "isHidden"}
               >
-                <li className="nav__item">
+                <li
+                  className="nav__item"
+                  onClick={() => history.push(routes.LOGIN)}
+                >
                   <FontAwesomeIcon icon={icons.faUser} className="mr-2" />
                   Login
                 </li>
