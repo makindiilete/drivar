@@ -25,11 +25,24 @@
   padding: 0 0 4rem 0;
 }
 
+.landingPageFive.shipping {
+  background: url("../images/landing/Path 201.svg") no-repeat;
+  background-size: cover;
+  margin-bottom: 15rem;
+  margin-top: 15rem;
+  padding: 0 0 4rem 0;
+}
+
 .landingPageFive .heroTwo {
   display: flex;
   justify-content: center;
   object-fit: contain;
   width: 100vw;
+}
+
+.landingPageThree .heroTwo {
+  width: 70% !important;
+  padding-bottom: 3rem;
 }
 
 .landingPageThree {
@@ -144,6 +157,10 @@
   width: 60% !important;
 }
 
+.landingPageFive .mobilePhone.shipping {
+  width: 100% !important;
+}
+
 @media (min-width: 375px) and (max-width: 500px) {
   .landingPage__card {
     height: 50vh;
@@ -169,9 +186,23 @@
     justify-content: center;
     /*padding-bottom: 10rem;*/
   }
+
+  .downloadTheApp.shipping {
+    display: flex;
+    flex-direction: column;
+    /*justify-content: center;*/
+    /*padding-bottom: 10rem;*/
+  }
 }
 
 @media (min-width: 1024px) {
+  .landingPageFive.shipping {
+    background: url("../images/landing/Path 201.svg") no-repeat;
+    background-size: contain;
+    margin-bottom: 15rem;
+    margin-top: 15rem;
+    padding: 0 0 4rem 0;
+  }
   .landingPage {
     background: url("../images/landing/heroImage.png") no-repeat;
     background-size: cover;
@@ -274,5 +305,10 @@
   .downloadTheApp {
     padding-bottom: 10rem;
     padding-top: 10rem;
+  }
+
+  .landingPageThree .heroTwo {
+    width: auto !important;
+    padding-bottom: 0;
   }
 }

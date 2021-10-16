@@ -20,7 +20,7 @@
 }
 
 :root {
-  --primary-color: rgba(238, 111, 87, 0.64);
+  --primary-color: #ee6f57;
   --secondary-color: #00d9ff;
   --black-primary: #1a1a1a;
   --black-secondary: #2c2c2c;
@@ -116,6 +116,10 @@ p {
 
 .text-dark-medium {
   color: var(--black-secondary) !important;
+}
+
+.company__stats__heading {
+  line-height: 1.5 !important;
 }
 
 @media only screen and (max-width: 500px) {

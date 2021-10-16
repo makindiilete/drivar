@@ -76,7 +76,7 @@
   .nav__items {
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   .nav__item {

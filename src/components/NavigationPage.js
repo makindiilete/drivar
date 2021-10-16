@@ -34,7 +34,10 @@ const NavigationPage = (props) => {
               </span>
               <li
                 className="nav__item"
-                onClick={() => history.push(routes.HOME)}
+                onClick={() => {
+                  history.push(routes.HOME);
+                  setIsExpanded(!isExpanded);
+                }}
               >
                 <img src={logo} alt="home page logo" className="img-fluid" />
               </li>
@@ -44,6 +47,10 @@ const NavigationPage = (props) => {
                     active === routes.COMPANY ? " active" : ""
                   } `}
                   id={!isExpanded && "isHidden"}
+                  onClick={() => {
+                    history.push(routes.COMPANY);
+                    setIsExpanded(!isExpanded);
+                  }}
                 >
                   Company
                 </li>
@@ -52,7 +59,10 @@ const NavigationPage = (props) => {
                     active === routes.RIDE ? " active" : ""
                   } `}
                   id={!isExpanded && "isHidden"}
-                  onClick={() => history.push(routes.RIDE)}
+                  onClick={() => {
+                    history.push(routes.RIDE);
+                    setIsExpanded(!isExpanded);
+                  }}
                 >
                   Ride
                 </li>
@@ -61,7 +71,10 @@ const NavigationPage = (props) => {
                     active === routes.DRIVE ? " active" : ""
                   } `}
                   id={!isExpanded && "isHidden"}
-                  onClick={() => history.push(routes.DRIVE)}
+                  onClick={() => {
+                    history.push(routes.DRIVE);
+                    setIsExpanded(!isExpanded);
+                  }}
                 >
                   Drive
                 </li>
@@ -70,6 +83,10 @@ const NavigationPage = (props) => {
                     active === routes.SHIP ? " active" : ""
                   } `}
                   id={!isExpanded && "isHidden"}
+                  onClick={() => {
+                    history.push(routes.SHIP);
+                    setIsExpanded(!isExpanded);
+                  }}
                 >
                   Ship
                 </li>
@@ -82,12 +99,18 @@ const NavigationPage = (props) => {
               >
                 <li
                   className="nav__item"
-                  onClick={() => history.push(routes.LOGIN)}
+                  onClick={() => {
+                    history.push(routes.LOGIN);
+                    setIsExpanded(!isExpanded);
+                  }}
                 >
                   <FontAwesomeIcon icon={icons.faUser} className="mr-2" />
                   Login
                 </li>
-                <li className="nav__item">
+                <li
+                  className="nav__item"
+                  onClick={() => setIsExpanded(!isExpanded)}
+                >
                   <a href="#download">
                     <Button type="primary">Sign Up</Button>
                   </a>

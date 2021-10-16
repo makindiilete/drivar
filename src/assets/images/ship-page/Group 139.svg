@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="72" height="72" viewBox="0 0 72 72">
+  <g id="Group_139" data-name="Group 139" transform="translate(-262.434 -4344.434)">
+    <rect id="Rectangle_718" data-name="Rectangle 718" width="72" height="72" rx="21" transform="translate(262.434 4344.434)" fill="#ffe2e0"/>
+    <g id="smartphone_1_" data-name="smartphone (1)" transform="translate(182.642 4358.113)">
+      <g id="Group_142" data-name="Group 142" transform="translate(114.304 3.72)">
+        <g id="Group_141" data-name="Group 141" transform="translate(0)">
+          <path id="Path_347" data-name="Path 347" d="M244.513,42.667h-4.464a1.116,1.116,0,0,0,0,2.232h4.464a1.116,1.116,0,1,0,0-2.232Z" transform="translate(-238.933 -42.667)" fill="#ee6f57"/>
+        </g>
+      </g>
+      <g id="Group_144" data-name="Group 144" transform="translate(102.4)">
+        <g id="Group_143" data-name="Group 143">
+          <path id="Path_348" data-name="Path 348" d="M124.72,0H106.864A4.47,4.47,0,0,0,102.4,4.464V40.177a4.47,4.47,0,0,0,4.464,4.464H124.72a4.47,4.47,0,0,0,4.464-4.464V4.464A4.47,4.47,0,0,0,124.72,0Zm2.232,40.177a2.232,2.232,0,0,1-2.232,2.232H106.864a2.232,2.232,0,0,1-2.232-2.232V4.464a2.232,2.232,0,0,1,2.232-2.232H124.72a2.232,2.232,0,0,1,2.232,2.232Z" transform="translate(-102.4)" fill="#ee6f57"/>
+        </g>
+      </g>
+      <g id="Group_146" data-name="Group 146" transform="translate(113.56 36.457)">
+        <g id="Group_145" data-name="Group 145">
+          <circle id="Ellipse_82" data-name="Ellipse 82" cx="2.232" cy="2.232" r="2.232" fill="#ee6f57"/>
+        </g>
+      </g>
+      <g id="Group_148" data-name="Group 148" transform="translate(110.584 3.72)">
+        <g id="Group_147" data-name="Group 147">
+          <circle id="Ellipse_83" data-name="Ellipse 83" cx="1.116" cy="1.116" r="1.116" fill="#ee6f57"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,35 @@
+.shipping__hero-area {
+  background-color: #fcede9;
+  margin-top: -7rem;
+  height: 60.9rem;
+}
+
+.shipping__hero-area__image {
+  /*padding-top: 4rem;*/
+}
+
+.shipping__tracking {
+  margin-top: 8.1rem;
+}
+
+.shipping__list-icon {
+  margin-top: 6rem;
+  margin-bottom: 0;
+}
+
+.shipping__list-icon__icons {
+  width: 7.2rem;
+  height: 7.2rem;
+  object-fit: contain;
+  margin-bottom: 2.7rem;
+}
+
+@media (min-width: 1024px) {
+  .shipping__hero-area__heading {
+    margin-left: 15.2rem;
+  }
+  .shipping__list-icon {
+    margin-top: 6rem;
+    margin-bottom: 25rem;
+  }
+}

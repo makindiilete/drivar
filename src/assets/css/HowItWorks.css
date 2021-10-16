@@ -5,6 +5,12 @@
   margin: 0 0 15rem 0;
 }
 
+.shipping {
+  background: transparent;
+  /*margin-bottom: 7.5rem;*/
+  padding: 0 0 0 0;
+}
+
 .howItWorksIcons {
   width: 10rem !important;
 }
@@ -32,4 +38,12 @@
 .howItWorks .arrowLeft {
   transform: rotate(180deg);
   /*transform: rotateX(90deg);*/
+}
+
+@media (min-width: 1201px) {
+  .shipping {
+    background: transparent;
+    /*margin-bottom: 15rem;*/
+    padding: 0 0 0 0;
+  }
 }
