@@ -3,8 +3,11 @@ import "../assets/css/FooterPage.css";
 import footerImage from "../assets/images/landing/logo.png";
 import google from "../assets/images/landing/Group 38.png";
 import apple from "../assets/images/landing/app-store-badge.svg";
+import { useHistory } from "react-router-dom";
+import routes from "../routes";
 
 const FooterPage = (props) => {
+  const history = useHistory();
   return (
     <div className="footerClass">
       <div className=" footer__sections">
@@ -25,15 +28,9 @@ const FooterPage = (props) => {
           </header>
           <div className="collapsible__content">
             <ul className="list">
-              <li>
-                <a href="#">Sign up to ride</a>
-              </li>
-              <li>
-                <a href="#">Why use Drivar app</a>
-              </li>
-              <li>
-                <a href="#">How it works</a>
-              </li>
+              <li>Sign up to ride</li>
+              <li>Why use Drivar app</li>
+              <li>How it works</li>
             </ul>
           </div>
         </section>
@@ -44,15 +41,9 @@ const FooterPage = (props) => {
           </header>
           <div className="collapsible__content">
             <ul className="list">
-              <li>
-                <a href="#">Sign up to ride</a>
-              </li>
-              <li>
-                <a href="#">Why use Drivar app</a>
-              </li>
-              <li>
-                <a href="#">How it works</a>
-              </li>
+              <li>Sign up to ride</li>
+              <li>Why use Drivar app</li>
+              <li>How it works</li>
             </ul>
           </div>
         </section>
@@ -63,15 +54,9 @@ const FooterPage = (props) => {
           </header>
           <div className="collapsible__content">
             <ul className="list">
-              <li>
-                <a href="#">Sign up to ride</a>
-              </li>
-              <li>
-                <a href="#">Why use Drivar app</a>
-              </li>
-              <li>
-                <a href="#">How it works</a>
-              </li>
+              <li>Sign up to ride</li>
+              <li>Why use Drivar app</li>
+              <li>How it works</li>
             </ul>
           </div>
         </section>
@@ -82,20 +67,12 @@ const FooterPage = (props) => {
           </header>
           <div className="collapsible__content">
             <ul className="list">
-              <li>
-                <a href="#">About Company</a>
-              </li>
-              <li>
-                <a href="#">Help Center</a>
-              </li>
-              <li>
-                <a href="#">Contact Us</a>
-              </li>
-              <li>
-                <a href="#">Terms & Conditions</a>
-              </li>
-              <li>
-                <a href="#">Privacy Policy</a>
+              <li>About Company</li>
+              <li>Help Center</li>
+              <li>Contact Us</li>
+              <li>Terms & Conditions</li>
+              <li onClick={() => history.push(routes.PRIVACY)}>
+                Privacy Policy
               </li>
             </ul>
           </div>

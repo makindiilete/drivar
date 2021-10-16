@@ -4,6 +4,8 @@ export default Object.freeze({
   LOGIN: "/login",
   RIDE: "/ride",
   COMPANY: "/company",
+  COMPANY_NOTES: "/company/notes",
   DRIVE: "/drive",
   SHIP: "/ship",
+  PRIVACY: "/privacy",
 });

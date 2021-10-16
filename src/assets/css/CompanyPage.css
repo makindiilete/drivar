@@ -55,6 +55,35 @@
   margin-bottom: 0;
 }
 
+/*COMPANY NOTES*/
+.companyNotes__nav__icon__container {
+  width: 2rem;
+  height: 2rem;
+  background: #eff4fe;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+}
+.companyNotes__nav__icon {
+  font-size: 2rem;
+  color: #9fb6fb;
+}
+
+.companyNotes__nav p {
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+  margin-left: 1rem;
+}
+.companyNotes__download {
+  width: 100%;
+  height: 40.8rem;
+  background: var(--blue-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 @media (min-width: 1024px) {
   .company__hero-area-two {
     background: url("../images/Company/Group-167.png");

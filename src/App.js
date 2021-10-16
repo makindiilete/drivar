@@ -10,6 +10,8 @@ import LoginPage from "./pages/Login.page";
 import DrivePage from "./pages/Drive.page";
 import ShipPage from "./pages/Ship.page";
 import CompanyPage from "./pages/Company.page";
+import CompanyNotesPage from "./pages/CompanyNotes.page";
+import PrivacyPage from "./pages/Privacy.page";
 
 AOS.init();
 
@@ -28,6 +30,16 @@ function App() {
             exact
             component={CompanyPage}
             path={routes.COMPANY}
+          />
+          <PublicAreaRoute
+            exact
+            component={CompanyNotesPage}
+            path={routes.COMPANY_NOTES}
+          />
+          <PublicAreaRoute
+            exact
+            component={PrivacyPage}
+            path={routes.PRIVACY}
           />
         </Switch>
       </Router>

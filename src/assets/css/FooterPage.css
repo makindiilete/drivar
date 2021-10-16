@@ -2,20 +2,21 @@
   background: var(--white-tertiary);
   padding: 3rem 0 3rem 0;
 }
-.footerClass a {
+.footerClass li {
   color: var(--black-primary);
   transition: color 0.3s;
 }
 
 .footerClass li {
   list-style: none;
+  cursor: pointer;
 }
 
 .footer__copyright {
   color: var(--blue-primary);
 }
 
-.footerClass a:hover {
+.footerClass li:hover {
   color: var(--primary-color);
 }
 

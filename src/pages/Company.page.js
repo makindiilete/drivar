@@ -7,8 +7,11 @@ import media_image_one from "../assets/images/Company/pexels-pixabay-164634.png"
 import media_image_two from "../assets/images/Company/Delivery-man.png";
 import media_image_three from "../assets/images/Company/Driver.png";
 import { Button } from "antd";
+import routes from "../routes";
+import { useHistory } from "react-router-dom";
 
 const CompanyPage = (props) => {
+  const history = useHistory();
   return (
     <div className="company">
       <div className="container">
@@ -125,8 +128,9 @@ const CompanyPage = (props) => {
                   type="primary"
                   size="large"
                   className="rider__hero-area__btn"
+                  onClick={() => history.push(routes.COMPANY_NOTES)}
                 >
-                  Sign Up
+                  Read Ken's Letter
                 </Button>
               </div>
             </div>

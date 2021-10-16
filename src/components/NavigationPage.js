@@ -44,7 +44,9 @@ const NavigationPage = (props) => {
               <Fade top>
                 <li
                   className={`nav__item nav__item__company${
-                    active === routes.COMPANY ? " active" : ""
+                    active === routes.COMPANY || active === routes.COMPANY_NOTES
+                      ? " active"
+                      : ""
                   } `}
                   id={!isExpanded && "isHidden"}
                   onClick={() => {

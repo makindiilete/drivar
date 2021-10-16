@@ -1,0 +1,15 @@
+.privacy {
+  margin-top: -7rem;
+}
+.privacy__heading {
+  background: #f2f6ff;
+  width: 100%;
+  height: 35rem;
+}
+
+.privacy__list {
+  padding-left: 2rem !important;
+}
+.privacy__list li {
+  margin-bottom: 2rem;
+}
