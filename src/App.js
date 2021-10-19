@@ -12,6 +12,7 @@ import ShipPage from "./pages/Ship.page";
 import CompanyPage from "./pages/Company.page";
 import CompanyNotesPage from "./pages/CompanyNotes.page";
 import PrivacyPage from "./pages/Privacy.page";
+import TermsPage from "./pages/Terms.page";
 
 AOS.init();
 
@@ -41,6 +42,7 @@ function App() {
             component={PrivacyPage}
             path={routes.PRIVACY}
           />
+          <PublicAreaRoute exact component={TermsPage} path={routes.TERMS} />
         </Switch>
       </Router>
     </div>

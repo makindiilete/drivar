@@ -1,0 +1,21 @@
+.terms {
+  margin-top: -7rem;
+}
+.terms__heading {
+  background: #fcede9;
+  width: 100%;
+  height: 35rem;
+}
+
+.terms__list {
+  padding-left: 2rem !important;
+}
+
+.terms__list li {
+  margin-bottom: 2rem;
+}
+
+.terms__list.none {
+  list-style: none;
+  padding-left: 0 !important;
+}

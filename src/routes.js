@@ -8,4 +8,5 @@ export default Object.freeze({
   DRIVE: "/drive",
   SHIP: "/ship",
   PRIVACY: "/privacy",
+  TERMS: "/terms",
 });

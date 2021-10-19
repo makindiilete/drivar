@@ -70,7 +70,9 @@ const FooterPage = (props) => {
               <li>About Company</li>
               <li>Help Center</li>
               <li>Contact Us</li>
-              <li>Terms & Conditions</li>
+              <li onClick={() => history.push(routes.TERMS)}>
+                Terms & Conditions
+              </li>
               <li onClick={() => history.push(routes.PRIVACY)}>
                 Privacy Policy
               </li>
