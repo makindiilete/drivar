@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "../assets/css/ContactUs.page.css";
 import { Button, Form, Input, Select } from "antd";
+import google from "../assets/images/landing/Group 38.png";
+import apple from "../assets/images/landing/app-store-badge.svg";
 
 const { Option } = Select;
 
@@ -233,7 +235,26 @@ const ContactUsPage = (props) => {
           </div>
         </div>
       </section>
-      {/* /.contact__form */}
+      <br />
+      <br />
+      <br />
+      <section className="contact__download d-flex align-items-center justify-content-center">
+        <div>
+          <h2 className="text-center">
+            Download the Ryva <br /> app and get started.
+          </h2>
+          <br />
+          <div className="d-flex justify-content-center">
+            <img
+              className="pr-3 playStoreImg"
+              src={google}
+              alt="google playstore"
+            />
+            <img className="appStoreImg" src={apple} alt="apple appstore" />
+          </div>
+        </div>
+      </section>
+      {/* /.contact__download */}
     </div>
   );
 };

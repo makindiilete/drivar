@@ -47,7 +47,12 @@
 }
 .contact__form__reg .submit-btn {
   width: 100%;
-  margin-bottom: 5rem;
+}
+
+.contact__download {
+  background: #f2f6ff;
+  width: 100%;
+  height: 25.2rem;
 }
 
 @media (min-width: 1024px) {
