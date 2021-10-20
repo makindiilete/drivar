@@ -9,4 +9,6 @@ export default Object.freeze({
   SHIP: "/ship",
   PRIVACY: "/privacy",
   TERMS: "/terms",
+  HELP_RIDE: "/helpRide",
+  CONTACT_US: "/contactUs",
 });

@@ -114,6 +114,13 @@ p {
   color: var(--blue-tertiary) !important;
 }
 
+.ant-tabs-ink-bar {
+  background: var(--blue-tertiary) !important;
+}
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: var(--blue-tertiary) !important;
+}
+
 .text-dark-medium {
   color: var(--black-secondary) !important;
 }

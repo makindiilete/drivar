@@ -1,10 +1,8 @@
 import React, { useEffect } from "react";
 import { Route } from "react-router-dom";
-import LoggedAreaBase from "../BaseLayout/LoggedAreaBase";
+import HelpAreaBase from "../BaseLayout/HelpAreaBase";
 
-const LoggedAreaRoute = ({ component: Component, ...rest }) => {
-  //Store the link to localStorage
-  localStorage.setItem("Link", rest.path);
+const HelpAreaRoute = ({ component: Component, ...rest }) => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -13,13 +11,13 @@ const LoggedAreaRoute = ({ component: Component, ...rest }) => {
       {...rest}
       render={(matchProps) => {
         return (
-          <LoggedAreaBase>
+          <HelpAreaBase>
             <Component {...matchProps} />
-          </LoggedAreaBase>
+          </HelpAreaBase>
         );
       }}
     />
   );
 };
 
-export default LoggedAreaRoute;
+export default HelpAreaRoute;

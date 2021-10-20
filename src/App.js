@@ -13,6 +13,10 @@ import CompanyPage from "./pages/Company.page";
 import CompanyNotesPage from "./pages/CompanyNotes.page";
 import PrivacyPage from "./pages/Privacy.page";
 import TermsPage from "./pages/Terms.page";
+import HelpAreaRoute from "./Layout/HelpAreaRoute";
+import HelpPage from "./pages/Help Center/Help.page";
+import HelpLinkPage from "./pages/Help Center/HelpLink.page";
+import ContactUsPage from "./pages/ContactUs.page";
 
 AOS.init();
 
@@ -43,6 +47,21 @@ function App() {
             path={routes.PRIVACY}
           />
           <PublicAreaRoute exact component={TermsPage} path={routes.TERMS} />
+          <PublicAreaRoute
+            exact
+            component={ContactUsPage}
+            path={routes.CONTACT_US}
+          />
+          <HelpAreaRoute
+            exact
+            component={HelpPage}
+            path={`${routes.HELP_RIDE}/:tab`}
+          />
+          <HelpAreaRoute
+            exact
+            component={HelpLinkPage}
+            path={`${routes.HELP_RIDE}/:tab/:title/:id`}
+          />
         </Switch>
       </Router>
     </div>

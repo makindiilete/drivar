@@ -13,6 +13,10 @@
   color: var(--primary-color);
 }
 
+.nav__items__help .nav__item.active {
+  color: var(--blue-tertiary);
+}
+
 .nav__list,
 .nav__list__reg {
   margin: 0;
@@ -86,6 +90,10 @@
   .nav__item:hover {
     color: var(--primary-color);
     cursor: pointer;
+  }
+
+  .nav__items__help .nav__item:hover {
+    color: var(--blue-tertiary);
   }
 
   .nav__first__column,

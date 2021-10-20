@@ -68,8 +68,12 @@ const FooterPage = (props) => {
           <div className="collapsible__content">
             <ul className="list">
               <li>About Company</li>
-              <li>Help Center</li>
-              <li>Contact Us</li>
+              <li onClick={() => history.push(`${routes.HELP_RIDE}/ride`)}>
+                Help Center
+              </li>
+              <li onClick={() => history.push(routes.CONTACT_US)}>
+                Contact Us
+              </li>
               <li onClick={() => history.push(routes.TERMS)}>
                 Terms & Conditions
               </li>
