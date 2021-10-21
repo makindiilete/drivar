@@ -133,6 +133,10 @@ p {
   cursor: pointer !important;
 }
 
+small {
+  font-size: 70% !important;
+}
+
 @media only screen and (max-width: 500px) {
   .col {
     margin-bottom: 4rem;
@@ -142,5 +146,10 @@ p {
 @media only screen and (max-width: 500px) {
   .col-md-4 {
     margin-bottom: 2rem !important;
+  }
+}
+@media (min-width: 1024px) {
+  small {
+    font-size: 80% !important;
   }
 }
