@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../assets/css/LandingPage.css";
 import MoveWithComfort from "../components/MoveWithComfort";
 import WeHelpYouMoveAround from "../components/WeHelpYouMoveAround";
@@ -8,6 +8,9 @@ import UsingRyvaApp from "../components/UsingRyvaApp";
 import DownloadTheApp from "../components/DownloadTheApp";
 
 const LandingPage = (props) => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <MoveWithComfort />

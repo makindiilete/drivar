@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Button, Form, Input } from "antd";
 import google from "../assets/images/landing/Group 38.png";
 import apple from "../assets/images/landing/app-store-badge.svg";
@@ -6,25 +6,31 @@ import "../assets/css/Login.page.css";
 import logo from "../assets/images/login/login icon.svg";
 import mobile from "../assets/images/landing/Drivar-Mockup.png";
 import "../assets/css/LandingPage.css";
+import { AuthContext } from "../Utils/context";
+import { useHistory } from "react-router-dom";
 
 const LoginPage = (props) => {
-  const [user, setUser] = useState({
+  const { user, setUser } = useContext(AuthContext);
+  const history = useHistory();
+  const [data, setData] = useState({
     phoneNumber: "",
     password: "",
   });
 
   function handleChange(value, name) {
     if (name === "phoneNumber") {
-      let newState = { ...user };
+      let newState = { ...data };
       newState.phoneNumber = value;
-      setUser(newState);
+      setData(newState);
     } else {
-      let newState = { ...user };
+      let newState = { ...data };
       newState.password = value;
-      setUser(newState);
+      setData(newState);
     }
   }
   const handleLogin = (data) => {
+    setUser("Michaelz");
+    history.push("/");
     console.log("Data submitted = ", data);
   };
 
@@ -72,7 +78,7 @@ const LoginPage = (props) => {
             <br />
             <Form layout="vertical" scrollToFirstError onFinish={handleLogin}>
               <Form.Item
-                initialValue={user.phoneNumber}
+                initialValue={data.phoneNumber}
                 name="phoneNumber"
                 label="Phone Number"
                 rules={[
@@ -88,7 +94,7 @@ const LoginPage = (props) => {
               </Form.Item>
 
               <Form.Item
-                initialValue={user.password}
+                initialValue={data.password}
                 name="password"
                 label="Password"
                 rules={[

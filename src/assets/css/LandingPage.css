@@ -4,7 +4,7 @@
 }
 
 .landingPage .heroLady {
-  width: 80%;
+  width: 20rem;
 }
 .landingPageTwo {
   background: url("../images/landing/Path 201.svg");
@@ -117,16 +117,14 @@
 }
 
 .firstCar {
-  left: 5vh;
   max-width: 100%;
-  top: 30vh;
-  width: 30vh;
+  margin-top: -40vh;
+  width: 20rem;
 }
 .secondCar {
-  left: 5vh;
   max-width: 100%;
-  top: 30vh;
-  width: 200px;
+  margin-top: 5vh;
+  width: 20rem;
 }
 
 .landingPage__card:first-of-type {
@@ -196,6 +194,10 @@
 }
 
 @media (min-width: 1024px) {
+  .landingPage .heroLady {
+    width: 80%;
+    max-width: 100%;
+  }
   .landingPageFive.shipping {
     background: url("../images/landing/Path 201.svg") no-repeat;
     background-size: contain;

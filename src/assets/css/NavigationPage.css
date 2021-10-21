@@ -57,7 +57,21 @@
   transition: all 5s;
 }
 
+.loggedInAvatar {
+  width: 4rem;
+  height: 4rem;
+  object-fit: cover;
+  border-radius: 2rem;
+  border: 1px solid var(--primary-color);
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
 @media screen and (min-width: 768px) {
+  .loggedInAvatar {
+    margin: 0;
+  }
   #isHidden {
     display: inline-flex;
   }

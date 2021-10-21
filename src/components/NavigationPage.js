@@ -1,20 +1,24 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { MenuFoldOutlined, CloseSquareOutlined } from "@ant-design/icons";
 import { Button } from "antd";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import * as icons from "@fortawesome/free-solid-svg-icons";
 import logo from "../assets/images/landing/logo.png";
 import "../assets/css/NavigationPage.css";
 import Fade from "react-reveal/Fade";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import * as icons from "@fortawesome/free-solid-svg-icons";
 import { useHistory, useLocation } from "react-router-dom";
 import routes from "../routes";
+import ceo from "../assets/images/Company/CEO.png";
+import { AuthContext } from "../Utils/context";
 
 const NavigationPage = (props) => {
-  const [isExpanded, setIsExpanded] = useState(false);
   const history = useHistory();
   const location = useLocation();
-
+  const [isExpanded, setIsExpanded] = useState(false);
+  const { user, setUser } = useContext(AuthContext);
   const [active, setActive] = useState(null);
+
+  console.log("Current user = ", user);
 
   useEffect(() => {
     setActive(location?.pathname);
@@ -94,31 +98,53 @@ const NavigationPage = (props) => {
                 </li>
               </Fade>
             </ul>
-            <Fade top>
-              <ul
-                className="list nav__list collapsible__content nav__second__column"
-                id={!isExpanded && "isHidden"}
-              >
-                <li
-                  className="nav__item"
-                  onClick={() => {
-                    history.push(routes.LOGIN);
-                    setIsExpanded(!isExpanded);
-                  }}
+
+            {!user ? (
+              <Fade top>
+                <ul
+                  className="list nav__list collapsible__content nav__second__column"
+                  id={!isExpanded && "isHidden"}
                 >
-                  <FontAwesomeIcon icon={icons.faUser} className="mr-2" />
-                  Login
-                </li>
-                <li
-                  className="nav__item"
-                  onClick={() => setIsExpanded(!isExpanded)}
-                >
-                  <a href="#download">
-                    <Button type="primary">Sign Up</Button>
-                  </a>
-                </li>
-              </ul>
-            </Fade>
+                  <li
+                    className="nav__item"
+                    onClick={() => {
+                      history.push(routes.LOGIN);
+                      setIsExpanded(!isExpanded);
+                    }}
+                  >
+                    <FontAwesomeIcon icon={icons.faUser} className="mr-2" />
+                    Login
+                  </li>
+                  <li
+                    className="nav__item"
+                    onClick={() => setIsExpanded(!isExpanded)}
+                  >
+                    <a href="#download">
+                      <Button type="primary">Sign Up</Button>
+                    </a>
+                  </li>
+                </ul>
+              </Fade>
+            ) : (
+              <>
+                <Fade top>
+                  <ul
+                    className="list nav__list collapsible__content nav__second__column"
+                    id={!isExpanded && "isHidden"}
+                    style={{ cursor: "pointer" }}
+                  >
+                    <div>
+                      <img src={ceo} className="img-fluid loggedInAvatar" />
+                      <span className="ml-2">Michaelz Omoakin</span>{" "}
+                      <FontAwesomeIcon
+                        icon={icons.faCaretDown}
+                        className="ml-1"
+                      />
+                    </div>
+                  </ul>
+                </Fade>
+              </>
+            )}
           </span>
         </nav>
       </header>

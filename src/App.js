@@ -17,54 +17,59 @@ import HelpAreaRoute from "./Layout/HelpAreaRoute";
 import HelpPage from "./pages/Help Center/Help.page";
 import HelpLinkPage from "./pages/Help Center/HelpLink.page";
 import ContactUsPage from "./pages/ContactUs.page";
+import { useState } from "react";
+import { AuthContext } from "./Utils/context";
 
 AOS.init();
 
 function App() {
   const history = useHistory();
+  const [user, setUser] = useState(null);
   return (
-    <div className="App">
-      <Router history={history}>
-        <Switch>
-          <PublicAreaRoute exact component={LandingPage} path={routes.HOME} />
-          <PublicAreaRoute exact component={LoginPage} path={routes.LOGIN} />
-          <PublicAreaRoute exact component={RidePage} path={routes.RIDE} />
-          <PublicAreaRoute exact component={DrivePage} path={routes.DRIVE} />
-          <PublicAreaRoute exact component={ShipPage} path={routes.SHIP} />
-          <PublicAreaRoute
-            exact
-            component={CompanyPage}
-            path={routes.COMPANY}
-          />
-          <PublicAreaRoute
-            exact
-            component={CompanyNotesPage}
-            path={routes.COMPANY_NOTES}
-          />
-          <PublicAreaRoute
-            exact
-            component={PrivacyPage}
-            path={routes.PRIVACY}
-          />
-          <PublicAreaRoute exact component={TermsPage} path={routes.TERMS} />
-          <PublicAreaRoute
-            exact
-            component={ContactUsPage}
-            path={routes.CONTACT_US}
-          />
-          <HelpAreaRoute
-            exact
-            component={HelpPage}
-            path={`${routes.HELP_RIDE}/:tab`}
-          />
-          <HelpAreaRoute
-            exact
-            component={HelpLinkPage}
-            path={`${routes.HELP_RIDE}/:tab/:title/:id`}
-          />
-        </Switch>
-      </Router>
-    </div>
+    <AuthContext.Provider value={{ user, setUser }}>
+      <div className="App">
+        <Router history={history}>
+          <Switch>
+            <PublicAreaRoute exact component={LandingPage} path={routes.HOME} />
+            <PublicAreaRoute exact component={LoginPage} path={routes.LOGIN} />
+            <PublicAreaRoute exact component={RidePage} path={routes.RIDE} />
+            <PublicAreaRoute exact component={DrivePage} path={routes.DRIVE} />
+            <PublicAreaRoute exact component={ShipPage} path={routes.SHIP} />
+            <PublicAreaRoute
+              exact
+              component={CompanyPage}
+              path={routes.COMPANY}
+            />
+            <PublicAreaRoute
+              exact
+              component={CompanyNotesPage}
+              path={routes.COMPANY_NOTES}
+            />
+            <PublicAreaRoute
+              exact
+              component={PrivacyPage}
+              path={routes.PRIVACY}
+            />
+            <PublicAreaRoute exact component={TermsPage} path={routes.TERMS} />
+            <PublicAreaRoute
+              exact
+              component={ContactUsPage}
+              path={routes.CONTACT_US}
+            />
+            <HelpAreaRoute
+              exact
+              component={HelpPage}
+              path={`${routes.HELP_RIDE}/:tab`}
+            />
+            <HelpAreaRoute
+              exact
+              component={HelpLinkPage}
+              path={`${routes.HELP_RIDE}/:tab/:title/:id`}
+            />
+          </Switch>
+        </Router>
+      </div>
+    </AuthContext.Provider>
   );
 }
 

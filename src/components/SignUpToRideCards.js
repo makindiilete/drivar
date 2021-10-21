@@ -33,7 +33,7 @@ const SignUpToRideCards = (props) => {
             </div>
             <img
               src={firstCar}
-              className="firstCar position-absolute"
+              className="firstCar img-fluid"
               data-aos="fade-right"
             />
           </div>
@@ -45,12 +45,6 @@ const SignUpToRideCards = (props) => {
                 Sign up to Drive or Deliver with{" "}
                 <span className="primary-text">Drivar</span>{" "}
               </h2>
-              {/*  <p className="text-center">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Aliquam consequuntur corporis culpa dignissimos harum labore
-                laudantium, nesciunt optio quam quasi quo, reiciendis saepe
-                similique voluptatum!
-              </p>*/}
               <br />
               <br />
               <p className="text-center">
@@ -60,7 +54,7 @@ const SignUpToRideCards = (props) => {
               </p>
               <img
                 src={secondCar}
-                className="secondCar position-absolute"
+                className="secondCar img-fluid"
                 data-aos="fade-left"
               />
             </div>
