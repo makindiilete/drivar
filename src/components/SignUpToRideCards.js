@@ -13,7 +13,7 @@ const SignUpToRideCards = (props) => {
             <div className="landingPage__card ">
               <h2 className="text-center">
                 Sign up to Ride with{" "}
-                <span className="secondary-text">Drivar</span>
+                <span className="secondary-text">Ryva</span>
               </h2>
               {/*<p className="text-center">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -43,7 +43,7 @@ const SignUpToRideCards = (props) => {
             <div className="landingPage__card ">
               <h2 className="text-center">
                 Sign up to Drive or Deliver with{" "}
-                <span className="primary-text">Drivar</span>{" "}
+                <span className="primary-text">Ryva</span>{" "}
               </h2>
               <br />
               <br />

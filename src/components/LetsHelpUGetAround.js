@@ -19,7 +19,7 @@ const LetsHelpUGetAround = (props) => {
         </div>
         <div className="col-md-6">
           <div className="text-content">
-            <p className="primary-text">RIDE WITH DRIVAR</p>
+            <p className="primary-text">RIDE WITH RYVA</p>
             <h2 className="heroText text-dark">
               Let’s help you get around smoothly, easy & safely.
             </h2>

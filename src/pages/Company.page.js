@@ -112,7 +112,7 @@ const CompanyPage = (props) => {
       <br />
       <br />
       <br />
-      <div className="company__hero-area-two">
+      {/* <div className="company__hero-area-two">
         <div className="container">
           <div className="row">
             <div className="col-md-4 d-flex align-items-center company__hero-area-two__heading">
@@ -134,11 +134,11 @@ const CompanyPage = (props) => {
                 </Button>
               </div>
             </div>
-            {/* /.col-md-4 */}
+             /.col-md-4
           </div>
-          {/* /.row */}
+           /.row
         </div>
-        {/* /.container */}
+         /.container
       </div>
       <br />
       <br />
@@ -179,7 +179,7 @@ const CompanyPage = (props) => {
               className="company__stats__card__right-img"
             />
           </div>
-          {/* /.company__stats__card */}
+           /.company__stats__card
           <h2 className="company__stats__heading">
             Keep up with the latest <br /> about
             <span className="secondary-text"> Ryva.</span>
@@ -230,14 +230,14 @@ const CompanyPage = (props) => {
                   diam nonumy eirmod tempor invidunt ut labore et dolore magna.
                 </p>
               </div>
-              {/* /.col-md-4 */}
+               /.col-md-4
             </div>
-            {/* /.row */}
+             /.row
           </div>
-          {/* /.company__stats__media */}
+           /.company__stats__media
         </div>
-        {/* /.container */}
-      </div>
+         /.container
+      </div>*/}
       {/* /.company__stats */}
     </div>
   );

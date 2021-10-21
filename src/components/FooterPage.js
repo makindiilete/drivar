@@ -14,9 +14,7 @@ const FooterPage = (props) => {
         <section className="footer__brand">
           <img src={footerImage} alt="" className="img-fluid" />
           <br />
-          <small className="footer__copyright text-sm-center">
-            Drivar Group
-          </small>
+          <small className="footer__copyright text-sm-center">Ryva Group</small>
           <br />
           <small className="footer__copyright text-sm-center">
             Copyright {new Date().getFullYear()}{" "}
@@ -29,7 +27,7 @@ const FooterPage = (props) => {
           <div className="collapsible__content">
             <ul className="list">
               <li>Sign up to ride</li>
-              <li>Why use Drivar app</li>
+              <li>Why use Ryva app</li>
               <li>How it works</li>
             </ul>
           </div>
@@ -42,7 +40,7 @@ const FooterPage = (props) => {
           <div className="collapsible__content">
             <ul className="list">
               <li>Sign up to ride</li>
-              <li>Why use Drivar app</li>
+              <li>Why use Ryva app</li>
               <li>How it works</li>
             </ul>
           </div>
@@ -55,7 +53,7 @@ const FooterPage = (props) => {
           <div className="collapsible__content">
             <ul className="list">
               <li>Sign up to ride</li>
-              <li>Why use Drivar app</li>
+              <li>Why use Ryva app</li>
               <li>How it works</li>
             </ul>
           </div>
@@ -63,7 +61,7 @@ const FooterPage = (props) => {
 
         <section className="collapsible collapsible--expanded footer__section">
           <header className="collapsible__header">
-            <h3 className="collapsible__heading footer__heading">DRIVAR</h3>
+            <h3 className="collapsible__heading footer__heading">RYVA</h3>
           </header>
           <div className="collapsible__content">
             <ul className="list">

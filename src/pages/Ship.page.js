@@ -110,7 +110,7 @@ const ShipPage = (props) => {
               <div className="col-md-6 downloadTheApp shipping">
                 <div className="text-content" style={{ marginRight: "10rem" }}>
                   <h2 className="heroText">
-                    Earn Money with <br /> Drivar Shipping
+                    Earn Money with <br /> Ryva Shipping
                   </h2>
                   <p className="text-dark-medium">
                     Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed

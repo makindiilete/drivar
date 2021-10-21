@@ -13,9 +13,9 @@ const EarnMoneyAnytimeDriving = (props) => {
       <div className="row content">
         <div className="col-md-6">
           <div className="text-content">
-            <p className="primary-text">RIDE WITH DRIVAR</p>
+            <p className="primary-text">RIDE WITH RYVA</p>
             <h2 className="heroText text-dark">
-              Earn money anytime driving with Drivar
+              Earn money anytime driving with Ryva
             </h2>
             <p className="text-dark-medium">
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem

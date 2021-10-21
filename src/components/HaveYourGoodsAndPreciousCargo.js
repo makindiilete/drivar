@@ -17,7 +17,7 @@ const HaveYourGoodsAndPreciousCargo = (props) => {
         </div>
         <div className="col-md-6">
           <div className="text-content">
-            <p className="primary-text">SHIP WITH DRIVAR</p>
+            <p className="primary-text">SHIP WITH RYVA</p>
             <h2 className="heroText text-dark">
               Have your goods and precious cargo delivered safely and timely.
             </h2>
