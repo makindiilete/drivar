@@ -7,9 +7,14 @@ import logo from "../assets/images/landing/logo.png";
 import Fade from "react-reveal/Fade";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import * as icons from "@fortawesome/free-solid-svg-icons";
-import { Button } from "antd";
+import { Button, Dropdown, Menu } from "antd";
 import { AuthContext } from "../Utils/context";
 import ceo from "../assets/images/Company/CEO.png";
+import iconOne from "../assets/images/nav/map-with-a-location-pointer-svgrepo-com.svg";
+import iconTwo from "../assets/images/nav/Group 3018.svg";
+import iconThree from "../assets/images/nav/Group 3014.svg";
+
+const { Item, Divider } = Menu;
 
 const HelpNavigation = (props) => {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -24,6 +29,55 @@ const HelpNavigation = (props) => {
   useEffect(() => {
     setActive(location?.pathname);
   }, [location?.pathname]);
+
+  const menu = (
+    <Menu>
+      <Item key="0">
+        <div className="media">
+          <img src={iconOne} className="d-flex mr-3" alt="" />
+          <div className="media-body">
+            <small className="mt-0 font-weight-bold">
+              Track my rides & Delivery
+            </small>
+            <br />
+            <small>
+              Lorem ipsum dolor sit amet, consetetur sadipscing <br /> elitr,
+              sed diam nonumy.
+            </small>
+          </div>
+        </div>
+      </Item>
+      <Divider />
+      <Item key="1">
+        <div className="media">
+          <img src={iconTwo} className="d-flex mr-3" alt="" />
+          <div className="media-body">
+            <small className="mt-0 font-weight-bold">Account Settings</small>
+            <br />
+            <small>
+              Lorem ipsum dolor sit amet, consetetur sadipscing <br /> elitr,
+              sed diam nonumy.
+            </small>
+          </div>
+        </div>
+      </Item>
+      <Divider />
+      <Item key="3" onClick={() => setUser(null)}>
+        <div className="media">
+          <img src={iconThree} className="d-flex mr-3" alt="" />
+          <div className="media-body">
+            <small className="mt-0 font-weight-bold">Logout</small>
+            <br />
+            <small>
+              Lorem ipsum dolor sit amet, consetetur sadipscing <br /> elitr,
+              sed diam nonumy.
+            </small>
+          </div>
+        </div>
+      </Item>
+    </Menu>
+  );
+
   return (
     <>
       <header>
@@ -137,10 +191,20 @@ const HelpNavigation = (props) => {
                     className="list nav__list collapsible__content nav__second__column"
                     id={!isExpanded && "isHidden"}
                   >
-                    <div>
-                      <img src={ceo} className="img-fluid loggedInAvatar" />
-                      <span className="ml-2">Michaelz Omoakin</span>
-                    </div>
+                    <Dropdown overlay={menu} trigger={["click"]}>
+                      <div className="cursor">
+                        <img
+                          src={ceo}
+                          className="img-fluid loggedInAvatar"
+                          alt=""
+                        />
+                        <span className="ml-2">Michaelz Omoakin</span>{" "}
+                        <FontAwesomeIcon
+                          icon={icons.faCaretDown}
+                          className="ml-1"
+                        />
+                      </div>
+                    </Dropdown>
                   </ul>
                 </Fade>
               </>

@@ -207,11 +207,13 @@
   }
   .landingPage {
     background: url("../images/landing/heroImage.png") no-repeat;
-    background-size: cover;
+    background-size: contain;
+    margin-right: -5rem;
     /*margin: 0 10rem 15rem 10rem;*/
   }
   .landingPage .text-content {
     padding-left: 3.5rem;
+    margin-top: -4rem;
   }
   .playStoreImg {
     object-fit: contain;
@@ -251,17 +253,21 @@
   }
 
   .firstCar {
-    left: -1vh;
+    position: absolute;
+    left: 4vh;
     max-width: 100%;
+    margin: 0;
     top: 45vh;
-    width: auto;
+    width: 80%;
   }
 
   .secondCar {
+    position: absolute;
     max-width: 100%;
     right: -5vh;
     top: 35vh;
     width: auto;
+    margin: 0;
   }
 
   .landingPageTwo .heroTwo {

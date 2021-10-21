@@ -6,10 +6,10 @@ import "../assets/css/LandingPage.css";
 const WeHelpYouMoveAround = (props) => {
   return (
     <section className="landingPage__about">
-      <h1 className="landingPage__about_heading">
-        We help you <span className="blueHeading"> move around.</span>
-      </h1>
-      <h1 className="landingPage__about_heading">
+      <h2 className="landingPage__about_heading">
+        We help you <span className="secondary-text"> move around.</span>
+      </h2>
+      <h2 className="landingPage__about_heading">
         <span>
           <img
             src={blueLine}
@@ -17,10 +17,10 @@ const WeHelpYouMoveAround = (props) => {
             data-aos="fade-right"
           />
         </span>
-        move your packages.
-      </h1>
+        <span className="tertiary-text">move your packages.</span>
+      </h2>
 
-      <h1 className="landingPage__about_heading">
+      <h2 className="landingPage__about_heading">
         <span>
           <img
             src={primaryLine}
@@ -29,7 +29,7 @@ const WeHelpYouMoveAround = (props) => {
           />
         </span>
         make money
-      </h1>
+      </h2>
       <p className="landingPage__about_content">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur
         dolorem doloribus dolorum eveniet facere illo illum, in iusto laudantium
