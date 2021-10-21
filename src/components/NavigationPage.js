@@ -33,7 +33,12 @@ const NavigationPage = (props) => {
     <Menu>
       <Item key="0">
         <div className="media">
-          <img src={iconOne} className="d-flex mr-3" alt="" />
+          <img
+            src={iconOne}
+            className="d-flex mr-3"
+            alt=""
+            style={{ paddingTop: "0.8rem" }}
+          />
           <div className="media-body">
             <small className="mt-0 font-weight-bold">
               Track my rides & Delivery
@@ -49,7 +54,12 @@ const NavigationPage = (props) => {
       <Divider />
       <Item key="1">
         <div className="media">
-          <img src={iconTwo} className="d-flex mr-3" alt="" />
+          <img
+            src={iconTwo}
+            className="d-flex mr-3"
+            alt=""
+            style={{ paddingTop: "0.8rem" }}
+          />
           <div className="media-body">
             <small className="mt-0 font-weight-bold">Account Settings</small>
             <br />
@@ -63,7 +73,12 @@ const NavigationPage = (props) => {
       <Divider />
       <Item key="3" onClick={() => setUser(null)}>
         <div className="media">
-          <img src={iconThree} className="d-flex mr-3" alt="" />
+          <img
+            src={iconThree}
+            className="d-flex mr-3"
+            alt=""
+            style={{ paddingTop: "0.8rem" }}
+          />
           <div className="media-body">
             <small className="mt-0 font-weight-bold">Logout</small>
             <br />
